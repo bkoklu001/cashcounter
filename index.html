@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Counter</title>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="bkoklu001">
+    <!-- External resources -->
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="titleText"><span id="cashTitleText">$Cash$ </span> Counter</h1>
+    <br>
+    <div>
+      <h2 id="moneyText">$ 0.00</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="formDiv">
+      <div id="depositDiv">
+        <h4>Deposit</h4>
+        <form onsubmit="depositFunc()" id="depositForm">
+          <input type="number" name="depositInput">
+          <br>
+          <br>
+          <span id="submitButton"><input type="submit"></span>
+        </form>
+      </div>
+      <div id="withdrawalDiv">
+        <h4>Withdrawal</h4>
+        <form onsubmit="withdrawalFunc()" id="withdrawalForm">
+          <input type="number" name="withdrawalInput">
+          <br>
+          <br>
+          <span id="submitButton"><input type="submit"></span>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
